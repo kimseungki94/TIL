@@ -2,3 +2,6 @@
 
 - WEB<br>
 - Algorithm<br>
+- Python
+- Dialogflow
+- flask
