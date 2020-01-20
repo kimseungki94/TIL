@@ -19,10 +19,73 @@
     <title>Web_Basic</title>
 </head>
 <body>
-    format
-    append
+    비교 연산자 결과는 논리형(bool)임
 
-    list,dictionary(key,value),tuple
-    
+and 
+or 
+not(결과값 반전) - true - false
+
+출력할때 상수 및 문자 대입
+
+print("%s + %s = %s" % (3,4,3*4))
+print("{} * {} = {}".format(3,4,3*4))
+3 * 4 = 12
+
+print("{0: ,}".format(546786324579))
+3자리 수마다 콤마 넣기
+
+txt="python"
+print(txt[0:2])
+
+txt = "python, crawling"
+txt.split(",") # string를 list로 변환
+
+title 맨앞글자만 대문자로 변환
+
+문자열 공백 제거
+
+strip() - 공백 없애기
+print(
+
+print("A",end="")
+end기능 : \n기능없이 바로 뒤에 있는 print를
+이어붙이게끔 하는 기능!
+
+list : 수정가능 대괄호
+tuple : 수정불가능 소괄호
+dictionary : key로 구분 중괄호
+hash구조로 되어있기 때문에 매우 빠름
+
+list,dictionary(key,value),tuple 필수
+
+데이터 분석 기초
+
+list 예시
+
+my_list = ["my","list",a,b]
+print(my_list)
+
+리스트는 슬라이싱 가능
+start end을 줌
+start : end
+
+start 나 end에 값이 비어있으면 처음이나 끝까지 실행
+
+::는 두개씩 띄움
+::-1은 리버스(반대로)
+
+insert를 써도 삽입이 되지만 모든 인덱스를
+뒤바꾸게 되서 잘 안쓰임
+
+★ .append list에 항목을 추가함
+
+del 특정인덱스list  0번째를 지운거
+
+pop는 맨뒤에 있는걸 지움
+
+즉 append pop을 쓰면 push pop 쉽게 쓸 수 있음
+
+remove는 인덱스에 있는 value를 호출해서 지움...
+
 </body>
 </html>
