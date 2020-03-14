@@ -1,0 +1,83 @@
+#container{
+    width: 850px;
+    height: auto;
+    border: 1px solid red ;
+    padding: 20px;
+}
+li {
+    display: inline; /* inline 요소처럼 줄 바꿈 안되게 한 줄에 배치*/
+    font-size: 15px;
+    color: blue;
+}
+h1{
+	background-color: rgb(97, 233, 97);
+	font-size: 30px;
+	padding: 20px; /*안쪽 여백*/
+    border: 1px rgb(110, 110, 110) solid;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 0px;
+}
+#art1{
+    width: 500px;
+    margin-left: 20px;
+    margin-right:20px;
+    background-color: yellow;
+}
+#mid{
+    width: 850px;
+    height:642px;
+}
+section{
+    width: 540px;
+    padding: 20px;
+    height: 600px;
+    border: 1px rgb(110, 110, 110) solid;
+    float: left;
+    
+}
+aside{
+    width: 220px;
+    
+    height:auto;
+    border: 1px rgb(110, 110, 110) solid;
+    float: right;
+}
+footer{
+    width:850px;
+    height: 200px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border: 1px rgb(110, 110, 110) solid;
+}
+#title_sidebar{
+    padding: 20px;
+    background-color: gray;
+}
+#footer_text1{
+    margin: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+  
+  td, th {
+    border: 0px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(2n+1) {
+    background-color: rgb(124, 124, 255);
+  }
+  tr:nth-child(1) {
+    background-color: blue;
+    color: white;
+  }
+  tr:nth-child(2n+2) {
+    background-color: rgb(219, 219, 255);
+  }
