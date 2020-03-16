@@ -1,0 +1,39 @@
+#content{
+    width : 580px;
+    height: 500px;
+    background-color: rgb(180, 180, 180);
+}
+#show{
+    width: 580px;
+    height:300px;
+    text-align: center;
+}
+#upperscreen{
+    width : 580px;
+    height: 100px;
+    text-align: center;
+}
+#randombtn{  
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#showtext{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#below{
+    width: 580px;
+    height:100px;
+}
+#art1{
+    padding: 20px;
+}
+#art2{
+    padding: 20px;
+}
+#art3{
+    padding: 20px;
+}
+#art4{
+    padding: 20px;
+}
