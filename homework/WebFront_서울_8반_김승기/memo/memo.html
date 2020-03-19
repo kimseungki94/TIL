@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="memo.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="memo-area">
+      <button>메모 추가</button>
+    <div class="memo-note">
+      <div class="memo-bar">
+        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+      </div>
+      <div class="memo-edit">
+        <textarea class="memo-edit-area"></textarea>
+      </div>
+    </div>
+    <div class="memo-note">
+      <div class="memo-bar">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+      </div>
+      <div class="memo-edit">
+        <textarea class="memo-edit-area"></textarea>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var a;
+  $(".glyphicon-chevron-down").click(function () {
+    if (a == 1) {
+      $(".glyphicon-chevron-down").css(
+        "transform", "rotate(0deg)"
+      )
+      $(".memo-note").height('180px');
+      a=0;
+    } else {
+      $(".glyphicon-chevron-down").css(
+        "transform", "rotate(-180deg)"
+      )
+      $(".memo-note").height('20px');
+      a = 1;
+    }
+  });
+  $(".glyphicon-pushpin").click(function () {
+    if (a == 1) {
+      $(".glyphicon-pushpin").css(
+        "transform", "rotate(0deg)"
+      )
+      $(".glyphicon-pushpin").css(
+        "color", "#000"
+      )
+      a=0;
+    } else {
+      $(".glyphicon-pushpin").css(
+        "transform", "rotate(-45deg)"
+      )
+      $(".glyphicon-pushpin").css(
+        "color", "rgb(218, 36, 36)"
+      )
+      a = 1;
+    }
+  });
+
+
+</script>
+
+</html>

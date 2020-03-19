@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+ 	height: 100%; 
+	font-size: 15px;
+}
+
+.memo-area {
+	height: 100%;
+	background-color: #ccdcfb;
+	position: relative; 
+}
+
+.memo-area>button {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	padding: 0 5px 0 20px;
+	font-weight: bold;
+	background: #9cd664 url('./images/add_memo.gif') no-repeat 4px 4px;
+	color: #275035;
+	border: 1px solid #5ca630;
+	height: 22px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.memo-note {
+	width: 160px;
+	height: 180px;
+	box-shadow: 4px 4px 4px -1px #666;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border: 1px solid #cde;
+	overflow: hidden;
+	transition: .5s height;
+	background: white;
+}
+
+.memo-note:active {
+	z-index: 1000;
+}
+
+.memo-bar {
+	height: 20px;
+    padding: 1px 3px 0 0;
+    background: rgb(252, 237, 131);
+    border-bottom: solid 1px #ffa;
+    text-align: right;
+}
+
+.memo-bar > .glyphicon {
+	margin-left: 3px;
+}
+
+.memo-edit {
+	height: 158px;
+	background-color: #ffff9d;
+}
+
+.memo-edit-area {
+	overflow: auto;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+    min-height: 100%;
+    padding: 4px 8px;
+    resize: none;
+}
+
+.memo-edit-area:focus {
+	background: #fff;
+	box-shadow: 0 0 0 2px #0079bf inset;
+}
