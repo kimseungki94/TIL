@@ -13,3 +13,4 @@
 
 - 200701 finish MySQL Class
 - 200702 finish RestAPI Class Project2 Start
+- 200707 Project2 Backend finish
