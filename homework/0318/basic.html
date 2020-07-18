@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" type="text/css" href="./test.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="content">
-        <div id="upperscreen">
-            <button id="randombtn" onclick="random()">랜덤선택</button>
-            <div id="showtext"></div>
-        </div>
-        <div id="show"></div>
-        <div id="below">
-            <img id="art1" width="100px" height="50px" src="./images/burger.jpg" />
-            <img id="art2" width="100px" height="50px" src="./images/cake.jpg" />
-            <img id="art3" width="100px" height="50px" src="./images/sandwich.jpg" />
-            <img id="art4" width="100px" height="50px" src="./images/steak.jpg" />
-        </div>
+      <div id="upperscreen">
+        <button id="randombtn" onclick="random()">랜덤선택</button>
+        <div id="showtext"></div>
+      </div>
+      <div id="show"></div>
+      <div id="below">
+        <img id="art1" width="100px" height="50px" src="./images/burger.jpg" />
+        <img id="art2" width="100px" height="50px" src="./images/cake.jpg" />
+        <img
+          id="art3"
+          width="100px"
+          height="50px"
+          src="./images/sandwich.jpg"
+        />
+        <img id="art4" width="100px" height="50px" src="./images/steak.jpg" />
+      </div>
     </div>
     <script>
-        $("#content").height('500px');
-        $("#content").width('580px');
-        $("#content").css("background-color","rgb(180, 180, 180)");
+      $("#content").height("500px");
+      $("#content").width("580px");
+      $("#content").css("background-color", "rgb(180, 180, 180)");
 
-        $("#show").height('300px');
-        $("#show").width('580px');
+      $("#show").height("300px");
+      $("#show").width("580px");
 
-        $("#upperscreen").height('100px');
-        $("#upperscreen").width('580px');
+      $("#upperscreen").height("100px");
+      $("#upperscreen").width("580px");
 
-        $("#below").width('580px');
-        $("#below").height('100px');
+      $("#below").width("580px");
+      $("#below").height("100px");
 
-        $("#art1").click(function () {
-            alert1();
-        });
-        $("#art2").click(function () {
-            alert2();
-        });
-        $("#art3").click(function () {
-            alert3();
-        });
-        $("#art4").click(function () {
-            alert4();
-        });
-        $("#randombtn").click(function () {
-            var result = Math.floor(Math.random() * 4) + 1;
-            if (result == 1) {
-                alert1();
-            } else if (result == 2) {
-                alert2();
-            } else if (result == 3) {
-                alert3();
-            } else {
-                alert4();
-            }
-        })
-        function alert1(){
-            $("#showtext").html('오늘의 메뉴 : 햄버거');
-            $("#show").html('<img id="art1" width="400px" height="250px" src="./images/burger.jpg"/>');
+      $("#art1").click(function () {
+        alert1();
+      });
+      $("#art2").click(function () {
+        alert2();
+      });
+      $("#art3").click(function () {
+        alert3();
+      });
+      $("#art4").click(function () {
+        alert4();
+      });
+      $("#randombtn").click(function () {
+        var result = Math.floor(Math.random() * 4) + 1;
+        if (result == 1) {
+          alert1();
+        } else if (result == 2) {
+          alert2();
+        } else if (result == 3) {
+          alert3();
+        } else {
+          alert4();
         }
-        function alert2(){
-            $("#showtext").html('오늘의 메뉴 : 케이크');
-            $("#show").html('<img id="art1" width="400px" height="250px" src="./images/cake.jpg"/>');
-        }
-        function alert3(){
-            $("#showtext").html('오늘의 메뉴 : 샌드위치');
-            $("#show").html('<img id="art1" width="400px" height="250px" src="./images/sandwich.jpg"/>');
-        }
-        function alert4(){
-            $("#showtext").html('오늘의 메뉴 : 스테이크');
-            $("#show").html('<img id="art1" width="400px" height="250px" src="./images/steak.jpg"/>');
-        }
+      });
+      function alert1() {
+        $("#showtext").html("오늘의 메뉴 : 햄버거");
+        $("#show").html(
+          '<img id="art1" width="400px" height="250px" src="./images/burger.jpg"/>'
+        );
+      }
+      function alert2() {
+        $("#showtext").html("오늘의 메뉴 : 케이크");
+        $("#show").html(
+          '<img id="art1" width="400px" height="250px" src="./images/cake.jpg"/>'
+        );
+      }
+      function alert3() {
+        $("#showtext").html("오늘의 메뉴 : 샌드위치");
+        $("#show").html(
+          '<img id="art1" width="400px" height="250px" src="./images/sandwich.jpg"/>'
+        );
+      }
+      function alert4() {
+        $("#showtext").html("오늘의 메뉴 : 스테이크");
+        $("#show").html(
+          '<img id="art1" width="400px" height="250px" src="./images/steak.jpg"/>'
+        );
+      }
+      function alert5() {
+        $("#showtext").html("오늘의 메뉴 : 스테이크");
+        $("#show").html(
+          '<img id="art1" width="400px" height="250px" src="./images/steak.jpg"/>'
+        );
+      }
     </script>
-
-
-
-</body>
-
+  </body>
 </html>
